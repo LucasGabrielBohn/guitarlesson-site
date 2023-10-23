@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left,#000000,#0e151f, #1e152e,#152338, #131f38);
+    background-size: 500% 100%;
+    animation: degrade 6s infinite alternate;
+}
+
+@keyframes degrade{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x:100%;
+    }
+}
+
+.navbar {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+ 
+.main {
+    width: 100%;
+    height: 653px;
+    display: flex;
+    justify-content: center;
+    flex-flow: nowrap;
+}
+
+.img { 
+    width: 150px;
+    height: 150px;
+}
+.img:hover{
+    opacity: 30%;
+    transition: 500ms;
+    transition-timing-function: ease-out;
+}
+.post{
+    margin-top: 55px;
+}
