@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Shrikhand&family=Vina+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Carter One', cursive;
+}
+
+body {
+    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #434343;
+    background: linear-gradient(to right,#83ffcf,#85a0ff, #d3a1ff,#86b4ff, #95f8ff ,rgb(123, 185, 255),#90eeff, #d1a9ff,rgb(124, 178, 255), #83d2ff);
+    background-size: 500% 100%;
+    animation: degrade 15s infinite alternate;
+}
+
+@keyframes degrade{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x:100%;
+    }
+}
+
+main.cards{
+    display: flex;
+    padding: 32px;
+    border: solid 2px black;
+    border-radius: 12px;
+    background: linear-gradient(to right,#c2baba,#cccfda, #b8b3bd,#e2e5e9, #adaaaa);
+    background-size: 500% 100%;
+    animation: degrade 4s infinite alternate;
+    box-shadow: 20px 20px 50px -10px #000000 ;
+   
+}
+
+@keyframes degrade{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x:100%;
+    }
+}
+
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 256px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img {
+   width: 100%;
+}
+
+main.cards section.card h3 {
+    margin: 16px 0px;
+}
+
+
+main.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 10px; 
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    color: #f6f9ff;
+}
+
+main.cards section.card.blues button {
+    background: linear-gradient(to right, #6b1a1a, #c93131);
+}
+main.cards section.card.hard button {
+    background: linear-gradient(to right, #b17911, #c4c13d);
+}
+main.cards section.card.metal button {
+    background: linear-gradient(to right, #a10ee6, #ec54e5);
+}
+
+main.cards section.card.blues {
+    box-shadow: 20px 20px 50px -30px #96919b;
+}
+
+main.cards section.card.hard {
+    box-shadow: 20px 20px 50px -30px #000000;
+}
+
+main.cards section.card.metal{
+    box-shadow: 20px 20px 50px -30px #000000;
+}
+
+.btn{
+    background: #000000;
+    color: #f6f9ff;
+}
+
+.arrow{
+    width: 64px;
+    height: 64px;
+    transform: rotate(180deg);
+    opacity: 43%;
+}
+
+.arrow:hover{
+   opacity: 100%;
+    transition: 4s;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+button a:hover{
+    text-decoration: none;
+    color: rgb(70, 65, 65);
+    transition: 500ms;
+}
